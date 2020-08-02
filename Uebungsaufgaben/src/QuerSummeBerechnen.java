@@ -18,6 +18,7 @@ public class QuerSummeBerechnen {
 		
 		for (int i = 0; i < inputToArray.length; i++) {
 			int temp = inputToArray[i];
+			
 			System.out.println(temp);
 		}
 		

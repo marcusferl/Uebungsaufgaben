@@ -1,3 +1,5 @@
+import java.nio.channels.NonReadableChannelException;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class LottoSimulation {
@@ -13,18 +15,28 @@ public class LottoSimulation {
 
 	public static void main(String[] args) {
 	
-		int minZahl = 1;
-		int maxZahl = 49;
-		
+		int lottozahlen [] = new int[50];
 		int[] zahlenEingabe = new int[6];
-		
+		int[] sechser = new int [6];
+
+ 		
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println(" Bitte 6 Zahlen eingeben zwischen 1 und 49 eingeben ");
 		for (int i = 0; i < 6; i++) {
 			zahlenEingabe[i] = scanner.nextInt();
 		}
-
+		for (int i=0;i < lottozahlen.length; i++) {
+			lottozahlen[i] = i;
+		}
+		for (int i = 0 ; i < sechser.length; i++) {
+			if(zahlenEingabe[i] == lottozahlen[i]) {
+				sechser[i] = zahlenEingabe[i];
+			}
+			
+		}
+		
+		System.out.println(Arrays.toString(sechser));
 		}
 		}
 	
