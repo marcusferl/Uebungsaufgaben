@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Rabattaktion {
 
@@ -13,7 +14,14 @@ public class Rabattaktion {
 	 */
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		System.out.println("Bitte Gesammtbetrag in Cent eingeben: ");
+		
+		int price = new Scanner(System.in).nextInt();
+		
+		int priceNew = price - (price * 10 / 100);
+		
+		System.out.println("Neuer Preis: " + priceNew + " Cent");
 
 	}
 

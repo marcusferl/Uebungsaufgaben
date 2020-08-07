@@ -18,6 +18,8 @@ test.add("Papier");
 		
 		Random r = new Random();
 		
+		System.out.println("1 für Stein, 2 für Schere, 3 für Papier");
+		
 		
 	}
 
